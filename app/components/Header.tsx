@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 export default function Header() {
   return (
     <header className="header">
@@ -9,10 +11,12 @@ export default function Header() {
         <nav className="nav">
           <div className="nav-links" style={{ display: "flex", gap: 28 }}>
             <a href="#features">Fitur</a>
-            <a href="#about">Tentang</a>
+            <a href="#pricing">Harga</a>
+            <a href="#testimonials">Testimoni</a>
             <a href="#contact">Kontak</a>
           </div>
           <div className="nav-cta">
+            <ThemeToggle />
             <a href="#contact" className="btn btn-ghost">
               Masuk
             </a>
